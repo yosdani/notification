@@ -24,8 +24,5 @@ class AppServiceProvider extends ServiceProvider
         Post::observe(ObserverPost::class);
     }
 
-    public function created():void
-    {
-        Post::observe(ObserverPost::class);
-    }
+   
 }
