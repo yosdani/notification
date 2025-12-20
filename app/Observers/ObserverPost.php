@@ -7,7 +7,7 @@ use App\Services\NotificationService;
 
 class ObserverPost
 {
-    NotificationService $notificacionService;
+  public  $notificacionService;
 
 
     public function __construct(NotificationService $notificacionService)

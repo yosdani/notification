@@ -24,5 +24,5 @@ class AppServiceProvider extends ServiceProvider
         Post::observe(ObserverPost::class);
     }
 
-   
+
 }
