@@ -9,14 +9,16 @@
 namespace App\Notification;
 
 
+use Illuminate\Notifications\Notification;
+
 class SmsNotification implements NotificationSender
 {
     /**
      * @param $message
      */
     public function send($message)
-  {
-      $user=$user = User::find(1);
-      Notification::sendNow($user,$message,['vonage']);
-  }
+    {
+        $user=$user = User::find(1);
+        Notification::sendNow($user,$message,['vonage']);
+    }
 }
