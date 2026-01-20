@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\URL;
+use Illuminate\Support\Str;
 
 class UserService
 {
@@ -35,6 +36,10 @@ class UserService
         return null;
     }
 
+    /**
+     * @param Users $user
+     * @return string
+     */
     public function generatePassword(Users $user): string
     {
         $password = Str::password();
